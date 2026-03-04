@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title> Kittu Graphics</title>
+  
+  <style>
+    
+    :root{
+      --accent:#ff6a00; 
+      --muted:#6b7280;
+      --bg:#fafafa;
+      --card:#ffffff;
+      font-family: 'Poppins', system-ui;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:#111}
+    a{text-decoration:none;color:inherit}
+
+    header{
+      background:linear-gradient(90deg,rgba(0,0,0,0.55),rgba(0,0,0,0.15)),
+      url('https://i.postimg.cc/KvwKm9F5/vivid-blurred-colorful-wallpaper-background-58702-2724.avif') center/cover no-repeat;
+      color:white;
+    }
+
+    .navwrap{display:flex;align-items:center;justify-content:space-between;padding:20px 30px}
+    .logo{font-size:22px;font-weight:700}
+    nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0}
+    nav a{padding:8px 12px;border-radius:8px}
+    nav a:hover{background:rgba(255,255,255,0.12)}
+
+    .hero{padding:80px 30px 100px; display:flex;flex-direction:column; align-items:center; justify-content:center; text-align:center; gap:20px;}
+    .hero-left{max-width:700px}
+
+    h1{font-size:42px;margin:0 0 14px;font-weight:700;}
+    .typing-text{font-size:28px;color:#fff; border-right:3px solid #fff; white-space:nowrap; overflow:hidden; margin-top:10px;}
+
+    .lead{color:#fff;font-size:16px;margin-bottom:20px}
+
+    .btn{padding:12px 18px;border-radius:10px;font-weight:600;display:inline-block}
+    .btn-primary{background:var(--accent);color:white}
+
+    main{padding:40px 30px}
+    .grid{display:grid;gap:18px}
+    .services{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));}
+    .card{background:white;border-radius:12px;padding:18px;box-shadow:0 6px 18px rgba(0,0,0,0.09)}
+
+    .products{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+    .product img{width:100%;height:170px;object-fit:cover;border-radius:10px}
+
+    footer{padding:25px;text-align:center;color:var(--muted)}
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="navwrap">
+      <div class="logo">Kittu Graphics</div>
+      <nav>
+        <ul>
+          <li><a href="#home.KITTU GRAPHICS WEBSITE.HTML">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="hero" id="home">
+      <div class="hero-left">
+        
+        <h1>Welcome to </h1>
+        <h1>KITTU GRAPHICS</h1>
+
+        <div id="typing-text" class="typing-text"></div>
+
+    </div>
+  </header>
+
+  <main>
+
+    <section id="services">
+      <h2>Our Services</h2>
+      <div class="grid services" style="margin-top:14px">
+        <div class="card"><h3>Graphics Designing</h3></div>
+        <div class="card"><h3>Flex Printing</h3></div>
+        <div class="card"><h3>Digital Printing</h3></div>
+        <div class="card"><h3>Offset Printing</h3></div>
+      </div>
+    </section>
+
+    
+   <section id="products" style="margin-top:30px">
+  <h2>Designing & Printing Services</h2>
+
+  <div class="products" style="margin-top:14px">
+
+    <div class="card product">
+      <img src="https://i.postimg.cc/Hn0STJ89/2.jpg" alt="Mug">
+      <div class="meta">
+        <strong>Custom Mug</strong><br>
+        <span style="color:var(--accent);font-weight:700">₹125</span>
+      </div>
+    </div>
+
+    <div class="card product">
+      <img src="https://i.postimg.cc/9fXdGJ9m/images-(1).jpg" alt="T-shirt">
+      <div class="meta">
+        <strong>Printed T-shirt</strong><br>
+        <span style="color:var(--accent);font-weight:700">₹100</span>
+      </div>
+    </div>
+
+    <div class="card product">
+      <img src="https://i.postimg.cc/fTjFNPY8/1.jpg" alt="Business Card">
+      <div class="meta">
+        <strong>Business Cards</strong><br>
+        <span style="color:var(--accent);font-weight:700">Starting ₹150</span>
+      </div>
+    </div>
+
+    <div class="card product">
+      <img src="https://i.postimg.cc/mg1Hrx1V/1.webp" alt="Flex Banner">
+      <div class="meta">
+        <strong>Flex Banner</strong><br>
+        <span style="color:var(--accent);font-weight:700"> 10/Sq Ft </span>
+      </div>
+    </div>
+
+    <div class="card product">
+      <img src="https://i.postimg.cc/XYZ123/sticker.jpg" alt="Sticker">
+      <div class="meta">
+        <strong>Stickers</strong><br>
+        <span style="color:var(--accent);font-weight:700"> ₹0.20</span>
+      </div>
+    </div>
+
+    <div class="card product">
+      <img src="https://i.postimg.cc/ABC456/notebook.jpg" alt="Notebook">
+      <div class="meta">
+        <strong>Lable</strong><br>
+        <span style="color:var(--accent);font-weight:700">₹0.50</span>
+      </div>
+    </div>
+
+    <div class="card product">
+      <img src="https://i.postimg.cc/DEF789/photoframe.jpg" alt="Photo Frame">
+      <div class="meta">
+        <strong>Tag</strong><br>
+        <span style="color:var(--accent);font-weight:700">₹2</span>
+      </div>
+    </div>
+
+    <div class="card product">
+      <img src="https://i.postimg.cc/GH12345/pen.jpg" alt="Custom Pen">
+      <div class="meta">
+        <strong>Custom Pen</strong><br>
+        <span style="color:var(--accent);font-weight:700">₹80</span>
+      </div>
+    </div>
+
+    <div class="card product">
+      <img src="https://i.postimg.cc/DEF789/photoframe.jpg" alt="Photo Frame">
+      <div class="meta">
+        <strong>Tag</strong><br>
+        <span style="color:var(--accent);font-weight:700">₹300</span>
+      </div>
+    </div>
+
+    <div class="card product">
+      <img src="" alt="Key Chain">
+      <div class="meta">
+        <strong>Key Chain</strong><br>
+        <span style="color:var(--accent);font-weight:700">₹300</span>
+      </div>
+    </div>
+
+       <div class="card product">
+      <img src="" alt="Key Chain">
+      <div class="meta">
+        <strong>Led Photo Stand</strong><br>
+        <span style="color:var(--accent);font-weight:700">₹300</span>
+      </div>
+    </div>
+
+     <div class="card product">
+      <img src="" alt="Badge">
+      <div class="meta">
+        <strong>Badge</strong><br>
+        <span style="color:var(--accent);font-weight:700">₹10</span>
+      </div>
+      </div>
+
+      <div class="card product">
+      <img src="" alt="Badge">
+      <div class="meta">
+        <strong>Badge</strong><br>
+        <span style="color:var(--accent);font-weight:500">₹10</span>
+      </div>
+      </div>
+
+       <div class="card product">
+      <img src="" alt="Badge">
+      <div class="meta">
+        <strong>Badge</strong><br>
+        <span style="color:var(--accent);font-weight:500">₹10</span>
+      </div>
+      </div>
+     
+
+</section>
+
+  </main>
+
+  <footer>
+    © 2026 Kittu Graphics — All Rights Reserved
+  </footer>
+
+  <script>
+    const texts = [
+      "Professional Printing Services",
+      "Custom Gift Items Available",
+      "Best Quality at Best Price"
+    ];
+
+    let index = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    const speed = 120;
+    const eraseSpeed = 60;
+    const delayBetween = 1200;
+
+    const typingElement = document.getElementById("typing-text");
+
+    function typeEffect() {
+      const currentText = texts[index];
+
+      if (!isDeleting) {
+        typingElement.textContent = currentText.substring(0, charIndex++);
+        typingElement.style.width = charIndex + "ch";
+
+        if (charIndex > currentText.length) {
+          isDeleting = true;
+          setTimeout(typeEffect, delayBetween);
+          return;
+        }
+      } else {
+        typingElement.textContent = currentText.substring(0, charIndex--);
+        typingElement.style.width = charIndex + "ch";
+
+        if (charIndex < 0) {
+          isDeleting = false;
+          index = (index + 1) % texts.length;
+        }
+      }
+
+      setTimeout(typeEffect, isDeleting ? eraseSpeed : speed);
+    }
+
+    typeEffect();
+  </script>
+
+</body>
+</html>
+
