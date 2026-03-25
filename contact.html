@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kittu Graphics - Contact Us</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+body{
+  font-family:'Poppins',sans-serif;
+  background:#f5f7fa;
+  margin:0;
+}
+
+/* HEADER */
+header{
+  background:black;
+  color:white;
+  padding:15px 50px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.logo{
+  font-size:22px;
+  font-weight:bold;
+  color:#ff4d4d;
+}
+nav a{
+  color:white;
+  margin-left:20px;
+  text-decoration:none;
+  font-size:14px;
+}
+nav a:hover{
+  color:#ff4d4d;
+}
+
+/* MAIN */
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:60px 20px;
+}
+.title{
+  font-size:36px;
+  font-weight:600;
+  margin-bottom:40px;
+}
+.title span{
+  color:#ff4d4d;
+}
+
+/* CONTACT BOX */
+.contact-box{
+  display:flex;
+  gap:30px;
+  flex-wrap:wrap;
+}
+
+/* LEFT SIDE */
+.contact-info{
+  background:linear-gradient(135deg,#ff0000,#ff4d4d);
+  color:white;
+  padding:40px;
+  flex:1;
+  border-radius:10px;
+}
+.info-box{
+  display:flex;
+  margin-bottom:25px;
+}
+.info-box i{
+  font-size:20px;
+  margin-right:15px;
+  margin-top:5px;
+}
+
+/* SOCIAL */
+.social{
+  margin-top:15px;
+  display:flex;
+  gap:15px;
+}
+.social a{
+  width:40px;
+  height:40px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:white;
+  color:#ff4d4d;
+  border-radius:50%;
+  font-size:18px;
+  transition:0.3s;
+}
+.social a:hover{
+  background:black;
+  color:white;
+  transform:scale(1.1);
+}
+
+/* RIGHT SIDE */
+.contact-form{
+  background:white;
+  padding:40px;
+  flex:2;
+  border-radius:10px;
+  box-shadow:0 5px 20px rgba(133, 6, 6, 0.1);
+}
+.form-row{
+  display:flex;
+  gap:15px;
+  margin-bottom:20px;
+}
+.contact-form input,
+.contact-form textarea{
+  width:100%;
+  padding:12px;
+  border:1px solid #ddd;
+  border-radius:5px;
+  font-size:14px;
+  outline:none;
+}
+.contact-form input:focus,
+.contact-form textarea:focus{
+  border-color:#ff4d4d;
+}
+textarea{
+  height:120px;
+}
+
+/* BUTTON */
+button{
+  background:black;
+  color:white;
+  padding:12px 25px;
+  border:none;
+  border-radius:5px;
+  cursor:pointer;
+  font-size:15px;
+  transition:0.3s;
+}
+button:hover{
+  background:#ff4d4d;
+  transform:scale(1.05);
+}
+
+/* WHATSAPP FLOAT */
+.whatsapp{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:white;
+  font-size:22px;
+  padding:15px;
+  border-radius:50%;
+  box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .contact-box{flex-direction:column;}
+  .form-row{flex-direction:column;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="logo">Kittu Graphics</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="index.html#services">Services</a>
+    <a href="index.html#products">Products</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<!-- CONTENT -->
+<div class="container">
+<div class="title">
+  <span>Grow</span> Your Business With <span>Kittu Graphics</span>
+</div>
+
+<div class="contact-box">
+
+<!-- LEFT -->
+<div class="contact-info">
+
+<div class="info-box">
+<i class="fa-solid fa-location-dot"></i>
+<div>
+<h3>Address</h3>
+<p> 23E, Gali No 8E,Sanik Vihar Phase-2,<br>Mohan Garden, New Delhi-59</p>
+</div>
+</div>
+
+<div class="info-box">
+<i class="fa-solid fa-phone"></i>
+<div>
+<h3>Phone / WhatsApp</h3>
+<p><a href="tel:+919123203897" style="color:white;text-decoration:none;">+91 9123203897</a></p>
+</div>
+</div>
+
+<div class="info-box">
+<i class="fa-solid fa-envelope"></i>
+<div>
+<h3>Email</h3>
+<p>kittugraphics09@gmail.com</p>
+</div>
+</div>
+
+<h3 style="margin-top:20px">Follow Us</h3>
+
+<div class="social">
+  <a href="https://www.facebook.com/share/1BUM9ScPSy" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+  <a href="https://www.instagram.com/kittu_graphics?igsh=eWg0Mm5hbWowM296" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+  <a href="https://youtube.com/@kittugraphics?si=MqNrzxVkN-6fCLa6" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+  <a href="https://wa.me/919123203897" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+</div>
+
+</div>
+
+<!-- RIGHT -->
+<div class="contact-form">
+
+<div class="form-row">
+<input type="text" placeholder="Your Name">
+<input type="email" placeholder="Your Email">
+</div>
+
+<div class="form-row">
+<input type="text" placeholder="Phone Number">
+<input type="text" placeholder="Subject">
+</div>
+
+<div class="form-row">
+<textarea placeholder="Write your message..."></textarea>
+</div>
+
+<button onclick="sendToWhatsApp()">Send Message</button>
+
+</div>
+
+</div>
+</div>
+
+<!-- FLOAT WHATSAPP -->
+<a href="https://wa.me/919123203897" class="whatsapp" target="_blank">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<script>
+function sendToWhatsApp(){
+  let name = document.querySelector('input[placeholder="Your Name"]').value;
+  let email = document.querySelector('input[placeholder="Your Email"]').value;
+  let phone = document.querySelector('input[placeholder="Phone Number"]').value;
+  let subject = document.querySelector('input[placeholder="Subject"]').value;
+  let message = document.querySelector('textarea').value;
+
+  let url = "https://wa.me/919123203897?text="
+  + "Name: " + name + "%0a"
+  + "Email: " + email + "%0a"
+  + "Phone: " + phone + "%0a"
+  + "Subject: " + subject + "%0a"
+  + "Message: " + message;
+
+  window.open(url, '_blank');
+}
+</script>
+
+</body>
+</html>

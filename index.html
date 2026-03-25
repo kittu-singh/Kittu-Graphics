@@ -19,15 +19,14 @@
     a{text-decoration:none;color:inherit}
 
     header{
-      background:linear-gradient(90deg,rgba(0,0,0,0.55),rgba(0,0,0,0.15)),
-      url('https://i.postimg.cc/KvwKm9F5/vivid-blurred-colorful-wallpaper-background-58702-2724.avif') center/cover no-repeat;
-      color:white;
-    }
-
-    .navwrap{display:flex;align-items:center;justify-content:space-between;padding:20px 30px}
+background:linear-gradient(90deg,rgba(0,0,0,0.55),rgba(0,0,0,0.15)),
+url('https://i.postimg.cc/Y0wrzwDm/35f8d3c0-981c-4048-adc6-f5acf17ff4a8.png') center/cover no-repeat;
+color:white;
+}
+    .navwrap{display:flex;align-items:center;justify-content:space-between;padding:10px 30px}
     .logo{font-size:22px;font-weight:700}
     nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0}
-    nav a{padding:8px 12px;border-radius:8px}
+    nav a{padding:8px 22%;border-radius:8px}
     nav a:hover{background:rgba(255,255,255,0.12)}
 
     .hero{padding:80px 30px 100px; display:flex;flex-direction:column; align-items:center; justify-content:center; text-align:center; gap:20px;}
@@ -46,10 +45,32 @@
     .services{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));}
     .card{background:white;border-radius:12px;padding:18px;box-shadow:0 6px 18px rgba(0,0,0,0.09)}
 
-    .products{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
-    .product img{width:100%;height:170px;object-fit:cover;border-radius:10px}
+    .products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:18px;
+}
 
-    footer{padding:25px;text-align:center;color:var(--muted)}
+.product{
+overflow:hidden;
+}
+
+.product img{
+width:100%;
+height:200px;
+object-fit:cover;
+border-radius:10px;
+transition:0.3s;
+display:block;
+}
+
+.product img:hover{
+transform:scale(1.05);
+}
+
+.meta{
+margin-top:10px;
+}
   </style>
 </head>
 
@@ -60,8 +81,9 @@
       <div class="logo">Kittu Graphics</div>
       <nav>
         <ul>
-          <li><a href="#home.KITTU GRAPHICS WEBSITE.HTML">Home</a></li>
+          <li><a href="#index.html">Home</a></li>
           <li><a href="#services">Services</a></li>
+          <li><a href="#About">About</a></li>
           <li><a href="#products">Products</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -81,6 +103,25 @@
 
   <main>
 
+     <h1 class="about-heading">
+  About <span>Kittu Graphics</span>
+     </h1>Founded in 2017, Kittu Graphics has quickly established itself as a leading , Trader, Retail, Wholesale and service provider in the printing and display industry. 
+     With a commitment to delivering high-quality products and services, we specialize in providing a diverse range of solutions including Roll-Up Standees, Sign Boards, and Printing Services.
+<style>
+
+.about-heading {
+  font-size: 60px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  color: black;
+}
+
+.about-heading span {
+  color: transparent;
+  -webkit-text-stroke: 2px red;
+}
+</style>
+
     <section id="services">
       <h2>Our Services</h2>
       <div class="grid services" style="margin-top:14px">
@@ -91,22 +132,22 @@
       </div>
     </section>
 
-    
    <section id="products" style="margin-top:30px">
   <h2>Designing & Printing Services</h2>
 
   <div class="products" style="margin-top:14px">
 
+    <!-- CARD START -->
     <div class="card product">
-      <img src="https://i.postimg.cc/Hn0STJ89/2.jpg" alt="Mug">
+      <img src="https://i.postimg.cc/rmV12yVv/coffee-cup-template-illustration-with-flower-russian-traditional-pattern-116432-298.jpg">
       <div class="meta">
         <strong>Custom Mug</strong><br>
-        <span style="color:var(--accent);font-weight:700">₹125</span>
+        <span style="color:var(--accent);font-weight:700">₹100</span>
       </div>
     </div>
 
     <div class="card product">
-      <img src="https://i.postimg.cc/9fXdGJ9m/images-(1).jpg" alt="T-shirt">
+      <img src="https://i.postimg.cc/KcwGNBVf/Whats-App-Image-2026-03-16-at-18-07-27.jpg">
       <div class="meta">
         <strong>Printed T-shirt</strong><br>
         <span style="color:var(--accent);font-weight:700">₹100</span>
@@ -114,7 +155,39 @@
     </div>
 
     <div class="card product">
-      <img src="https://i.postimg.cc/fTjFNPY8/1.jpg" alt="Business Card">
+      <img src="https://i.postimg.cc/mrPTT0Dg/promotional-caps-500x500.webp">
+      <div class="meta">
+        <strong>Cap Printing</strong><br>
+        <span style="color:var(--accent);font-weight:700">₹80</span>
+      </div>
+    </div>
+
+    <div class="card product">
+      <img src="https://i.postimg.cc/fbtJJBDk/Whats-App-Image-2026-03-23-at-21-07-53.jpg">
+      <div class="meta">
+        <strong>Custom Pen</strong><br>
+        <span style="color:var(--accent);font-weight:700">₹5</span>
+      </div>
+    </div>
+
+    <div class="card product">
+      <img src="https://i.postimg.cc/Y9XLY16r/personalized-water-bottle-441x441.jpg">
+      <div class="meta">
+        <strong>Custom Bottle</strong><br>
+        <span style="color:var(--accent);font-weight:700">₹300</span>
+      </div>
+    </div>
+
+    <div class="card product">
+      <img src="https://i.postimg.cc/rFjLqQ92/keychain-printing-service.webp">
+      <div class="meta">
+        <strong>Key Chain</strong><br>
+        <span style="color:var(--accent);font-weight:700">₹10 / Piece</span>
+      </div>
+    </div>
+
+    <div class="card product">
+      <img src="https://i.postimg.cc/fTjFNPY8/1.jpg">
       <div class="meta">
         <strong>Business Cards</strong><br>
         <span style="color:var(--accent);font-weight:700">Starting ₹150</span>
@@ -122,31 +195,63 @@
     </div>
 
     <div class="card product">
-      <img src="https://i.postimg.cc/mg1Hrx1V/1.webp" alt="Flex Banner">
+      <img src="https://i.postimg.cc/RFrMKZFg/atm-pouch-500x500.webp">
+      <div class="meta">
+        <strong>Atm Pouch</strong><br>
+        <span style="color:var(--accent);font-weight:700">Starting ₹1,900</span>
+      </div>
+    </div>
+
+    <div class="card product">
+      <img src="https://i.postimg.cc/mg1Hrx1V/1.webp">
       <div class="meta">
         <strong>Flex Banner</strong><br>
-        <span style="color:var(--accent);font-weight:700"> 10/Sq Ft </span>
+        <span style="color:var(--accent);font-weight:700">₹10 / Sq Ft</span>
       </div>
     </div>
 
     <div class="card product">
-      <img src="https://i.postimg.cc/XYZ123/sticker.jpg" alt="Sticker">
+      <img src="https://i.postimg.cc/0jSBZ1Ch/vinyl-digital-printing-service-2221545692-3gezqu4o.avif">
+      <div class="meta">
+        <strong>Vinyl Printing</strong><br>
+        <span style="color:var(--accent);font-weight:700">₹30 Meter</span>
+      </div>
+    </div>
+
+    <div class="card product">
+      <img src="https://i.postimg.cc/rw2LBQ07/si-H0IUc-Z-600-600.webp">
+      <div class="meta">
+        <strong>One Way Vision</strong><br>
+        <span style="color:var(--accent);font-weight:700">₹30 / Sq Ft</span>
+      </div>
+    </div>
+
+    <div class="card product">
+      <img src="https://i.postimg.cc/kGDbd7Zm/Acrylic-Sign-Board-1.jpg">
+      <div class="meta">
+        <strong>Acrylic Sign Board</strong><br>
+        <span style="color:var(--accent);font-weight:700">₹30 Meter</span>
+      </div>
+    </div>
+
+    <div class="card product">
+      <img src="https://i.postimg.cc/25BPqBtT/Whats-App-Image-2026-03-23-at-21-06-55.jpg">
       <div class="meta">
         <strong>Stickers</strong><br>
-        <span style="color:var(--accent);font-weight:700"> ₹0.20</span>
+        <span style="color:var(--accent);font-weight:700">₹0.20</span>
       </div>
     </div>
 
     <div class="card product">
-      <img src="https://i.postimg.cc/ABC456/notebook.jpg" alt="Notebook">
+      <img src="https://i.postimg.cc/2jB68R1b/product-jpeg-500x500.webp">
       <div class="meta">
-        <strong>Lable</strong><br>
+        <strong>Label</strong><br>
         <span style="color:var(--accent);font-weight:700">₹0.50</span>
       </div>
     </div>
 
     <div class="card product">
-      <img src="https://i.postimg.cc/DEF789/photoframe.jpg" alt="Photo Frame">
+      <img src="https://i.postimg.cc/9z3ttbv0/Whats-App-Image-2026-03-16-at-18-51-56.jpg">
       <div class="meta">
         <strong>Tag</strong><br>
         <span style="color:var(--accent);font-weight:700">₹2</span>
@@ -154,68 +259,140 @@
     </div>
 
     <div class="card product">
-      <img src="https://i.postimg.cc/GH12345/pen.jpg" alt="Custom Pen">
+      <img src="https://i.postimg.cc/Tw1ZY6QS/A3-Flyers-350x350.jpg">
       <div class="meta">
-        <strong>Custom Pen</strong><br>
-        <span style="color:var(--accent);font-weight:700">₹80</span>
+        <strong>Flyers</strong><br>
+        <span style="color:var(--accent);font-weight:700">₹1,800</span>
       </div>
     </div>
 
     <div class="card product">
-      <img src="https://i.postimg.cc/DEF789/photoframe.jpg" alt="Photo Frame">
+      <img src="https://i.postimg.cc/nVj4nR8S/61Ju337ki-IL.jpg">
       <div class="meta">
-        <strong>Tag</strong><br>
-        <span style="color:var(--accent);font-weight:700">₹300</span>
+        <strong>Letter Head</strong><br>
+        <span style="color:var(--accent);font-weight:700">₹400</span>
       </div>
     </div>
 
     <div class="card product">
-      <img src="" alt="Key Chain">
+      <img src="https://i.postimg.cc/T3RQ2VJz/Regular-Office-Envelope-7.jpg">
       <div class="meta">
-        <strong>Key Chain</strong><br>
-        <span style="color:var(--accent);font-weight:700">₹300</span>
+        <strong>Envelope</strong><br>
+        <span style="color:var(--accent);font-weight:700">₹5/ Pices</span>
       </div>
     </div>
 
-       <div class="card product">
-      <img src="" alt="Key Chain">
-      <div class="meta">
-        <strong>Led Photo Stand</strong><br>
-        <span style="color:var(--accent);font-weight:700">₹300</span>
-      </div>
-    </div>
-
-     <div class="card product">
-      <img src="" alt="Badge">
+    <div class="card product">
+      <img src="https://i.postimg.cc/mgsc231D/promotional-badges.jpg">
       <div class="meta">
         <strong>Badge</strong><br>
-        <span style="color:var(--accent);font-weight:700">₹10</span>
+        <span style="color:var(--accent);font-weight:700">₹7 / Piece</span>
       </div>
+    </div>
+
+    <div class="card product">
+      <img src="https://i.postimg.cc/3x5ngrT2/Whats-App-Image-2026-03-16-at-18-54-51.jpg">
+      <div class="meta">
+        <strong>Stamp</strong><br>
+        <span style="color:var(--accent);font-weight:700">₹100</span>
       </div>
+    </div>
 
       <div class="card product">
-      <img src="" alt="Badge">
-      <div class="meta">
-        <strong>Badge</strong><br>
-        <span style="color:var(--accent);font-weight:500">₹10</span>
+        <img src="https://i.postimg.cc/vmHT7JjH/Whats-App-Image-2026-03-18-at-14-23-49.jpg">
+        <div class="meta">
+          <strong>Wedding Cards</strong><br>
+          <span style="color:var(--accent);font-weight:700">Starting ₹10</span>
+        </div>
       </div>
-      </div>
+    </a>
 
-       <div class="card product">
-      <img src="" alt="Badge">
+    <div class="card product">
+      <img src="https://i.postimg.cc/k5n9xLML/standard-id-card-printing-1.webp">
       <div class="meta">
-        <strong>Badge</strong><br>
-        <span style="color:var(--accent);font-weight:500">₹10</span>
+        <strong>Identity Card</strong><br>
+        <span style="color:var(--accent);font-weight:700">₹35</span>
       </div>
+    </div>
+
+    <div class="card product">
+      <img src="https://i.postimg.cc/Bv5VFJYQ/Whats-App-Image-2026-03-21-at-18-03-52.jpg">
+      <div class="meta">
+        <strong>Lanyard</strong><br>
+        <span style="color:var(--accent);font-weight:700">₹10</span>
       </div>
-     
+    </div>
+
+    <div class="card product">
+      <img src="https://i.postimg.cc/3JWVq5Rw/Whats-App-Image-2026-03-21-at-18-17-25.jpg">
+      <div class="meta">
+        <strong>Wall Calendar</strong><br>
+        <span style="color:var(--accent);font-weight:700">₹12 / Peices</span>
+      </div>
+    </div>
+
+    <div class="card product">
+      <img src="https://i.postimg.cc/7hmcRnzG/81f-Z0u-XIs-ML-AC-UF1000-1000-QL80.jpg">
+      <div class="meta">
+        <strong>Table Calendar</strong><br>
+        <span style="color:var(--accent);font-weight:700">₹25 / Peices</span>
+      </div>
+    </div>
+
+    <div class="card product">
+      <img src="https://i.postimg.cc/kG13v5GM/hayati-resort-modern-loop-handle-bag-616.jpg">
+      <div class="meta">
+        <strong>Carry Bag</strong><br>
+        <span style="color:var(--accent);font-weight:700">₹180 Kg</span>
+      </div>
+    </div>
+
+    <div class="card product">
+      <img src="https://i.postimg.cc/7hbckGSS/luxury-roll-up-display-standee.jpg">
+      <div class="meta">
+        <strong>Rollup Standee</strong><br>
+        <span style="color:var(--accent);font-weight:700">₹1,050</span>
+      </div>
+    </div>
+
+    <div class="card product">
+      <img src="https://i.postimg.cc/mkbLNwfP/bill-book-printing-by-eprinton-01.jpg">
+      <div class="meta">
+        <strong>Bill Book</strong><br>
+        <span style="color:var(--accent);font-weight:700">₹1,100</span>
+      </div>
+    </div>
+
+    <div class="card product">
+      <img src="https://i.postimg.cc/8PzsfXXW/Custom-Diary-Notebook-A5-Size-PU-Leather-Note-Book.avif">
+      <div class="meta">
+        <strong>Diary</strong><br>
+        <span style="color:var(--accent);font-weight:700">₹150</span>
+      </div>
+    </div>
+    <div class="card product">
+      <img src="https://i.postimg.cc/2SdMWYc8/luxe-brochure-992.jpg">
+      <div class="meta">
+        <strong>Broucher</strong><br>
+        <span style="color:var(--accent);font-weight:700">₹60 / Page</span>
+      </div>
+    </div>
+    <div class="card product">
+      <img src="https://i.postimg.cc/rpspZftK/Whats-App-Image-2026-03-24-at-18-59-22.jpg">
+      <div class="meta">
+        <strong>Pamphlet</strong><br>
+        <span style="color:var(--accent);font-weight:700">₹600</span>
+      </div>
+    </div>
+  </div>
 
 </section>
+
 
   </main>
 
   <footer>
-    © 2026 Kittu Graphics — All Rights Reserved
+   <p>© 2026 Kittu Graphics — All Rights Reserved</p>    
   </footer>
 
   <script>
